@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c448b8799a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Piedra,Papel,Tijeras</title>
+  </head>
+  <body>
+    <!--desarrollo del juego piedra, papel o tijeras-->
+    <div class="container" id="contenedor">
+        <h1>Piedra, Papel y Tijeras</h1> 
+        
+        <div id="result">
+            <div><i class="fa-solid fa-desktop"></i>Maquina:<span id="contMachine"></span> </div>
+            <img id="img-machine" src="">
+            <div id="start-text">Elige una opcion:</div>
+            <div><i class="fa-solid fa-user"></i>Usuario: <span id="contUser"></span></div>
+            <img id="img-user"src="">
+            
+        </div>
+    <!--llamada a las fotos guardadas en la carpeta imágenes y colocadas en botones-->
+      <div id="grupo-botones">
+        <button id="piedra" type="button" >
+          <img src="../imagenes/rock.png"/>
+        </button>
+        <button id="papel" type="button" >
+          <img src="../imagenes/paper.png"/>
+        </button>
+        <button id="tijera" type="button" >
+          <img src="../imagenes/scissors.png"/>
+        </button>
+      </div>
+      <!--boton de reinicio del juego-->
+      <div>
+        <button id="inicializar" type="button" >Inicializar</button>
+      </div>
+    </div>
+    <!---enlace al archivo javascript-->
+    <script type="module" src="../js/Ejercicio3.js"></script>
+  </body>
+</html>
